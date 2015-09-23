@@ -118,7 +118,7 @@
     if (_root!=nil) {
         self.title = _root.title;
         self.navigationItem.title = _root.title;
-        if (_root.preselectedElementIndex !=nil)
+        if (_root.preselectedElementIndex !=nil && _root.preselectedElementIndex.row > 0)
             [self.quickDialogTableView scrollToRowAtIndexPath:_root.preselectedElementIndex atScrollPosition:UITableViewScrollPositionTop animated:NO];
 
     }
